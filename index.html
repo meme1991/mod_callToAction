@@ -53,20 +53,6 @@
 
       gtag('config', 'UA-112527143-1');
     </script>
-    <script>
-    /**
-    * Funzione che monitora un clic su un link in uscita in Analytics.
-    * Questa funzione prende in considerazione e utilizza una stringa dell'URL valido
-    * Come etichetta evento. L'impostazione del metodo di trasporto su 'beacon' consente l'invio dell'hit
-    * utilizzando 'navigator.sendBeacon' in un browser che lo supporta.
-    */
-    var trackOutboundLink = function(url) {
-       ga('send', 'event', 'outbound', 'click', url, {
-         'transport': 'beacon',
-         'hitCallback': function(){document.location = url;}
-       });
-    }
-    </script>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
       <div class="container">
@@ -116,7 +102,7 @@
           </ul>
         </div>
         <div class="text-center mt-4">
-          <a href="https://github.com/meme1991/mod_callToAction/archive/master.zip" class="btn btn-dark btn-download btn-lg mr-1" onclick="trackOutboundLink('https://github.com/meme1991/mod_callToAction/archive/master.zip')" title="Download">Download</a>
+          <a href="https://github.com/meme1991/mod_callToAction/archive/master.zip" class="btn btn-dark btn-download btn-lg mr-1" onclick="ga('send', 'event', 'Videos', 'play', 'Fall Campaign');" title="Download">Download</a>
           <a href="https://github.com/meme1991/mod_callToAction" target="_blank" class="btn btn-info btn-github btn-lg ml-1" title="Vedi su GitHub">GitHub</a>
         </div>
       </div>
