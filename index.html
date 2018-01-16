@@ -42,17 +42,22 @@
       .btn-download::after{position:relative;content:'\f019';font-family:'FontAwesome';margin-left:5px;}
       .btn-github::after{position:relative;content:'\f09b';font-family:'FontAwesome';margin-left:5px;}
     </style>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-112527143-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </head>
   <body>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112527143-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-112527143-1');
-    </script>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
       <div class="container">
@@ -102,7 +107,7 @@
           </ul>
         </div>
         <div class="text-center mt-4">
-          <a href="https://github.com/meme1991/mod_callToAction/archive/master.zip" class="btn btn-dark btn-download btn-lg mr-1" onclick="ga('send', 'event', 'Videos', 'play', 'Fall Campaign');" title="Download">Download</a>
+          <a href="https://github.com/meme1991/mod_callToAction/archive/master.zip" class="btn btn-dark btn-download btn-lg mr-1" onclick="_gaq.push(['_trackEvent', 'button3', 'clicked'])" title="Download">Download</a>
           <a href="https://github.com/meme1991/mod_callToAction" target="_blank" class="btn btn-info btn-github btn-lg ml-1" title="Vedi su GitHub">GitHub</a>
         </div>
       </div>
