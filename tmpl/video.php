@@ -10,9 +10,9 @@
 defined('_JEXEC') or die;
 ?>
 <section class="calltoaction video">
-  <div class="container-fluid p-0">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 p-0">
         <div class="stage d-flex justify-content-center align-items-center" style="background-image: url('<?php echo $video_image ?>'); ">
           <div class="caption">
             <?php if($video_url) : ?>
